@@ -18,6 +18,24 @@ Se
 [https://samarbeid.difi.no/difis-felleslosninger/hvilke-virksomheter-kan-ta-i-bruk-difis-felleslosningene](https://samarbeid.difi.no/difis-felleslosninger/hvilke-virksomheter-kan-ta-i-bruk-difis-felleslosningene)
  for mer informasjon om hvordan du kan bli tjenesteeierr i ID-porten
 
+## Planlegging
+Følgende punkter bør være en del av planleggingen (gjøres i samarbeid med Difi)
+
+    Tidsplan
+    Produksjonsplan
+    Beskrivelse av tjenesten
+    Forventninger omkring volum og bruk, herunder eventuelle høy-trafikkperioder
+    Påvirkning på ID-porten sin brukerstøtte
+
+## Etablerering i test og produksjon
+Difi krever at tjenester som skal beskyttes av ID-porten må gjennom et verifikasjonsløp før tjenesten kan produksjonssettes. Det er derfor nødvendig at tjenesteleverandør fødererer en testbasert versjon av sin tjeneste i Difi sitt verifikasjonsmiljø. Her skal det kun benyttes fiktive data, og ikke reelle brukere. Ved test av varsling pr sms og/eller e-post må tjenesteleverandør passe på at en bruker egnet kontaktinformasjon da varslingen sender ut reelle meldinger til eieren av kontaktinformasjonen.
+
+Difi har etablert et standardsett av tester for verifisering og godkjenning av integrasjon mot ID-porten. Tjenesteleverandør skal utføre denne og bekrefte til Difi at testing er utført ok. Les om verifikasjonstester
+
+Før produksjonssetting kan skje må bruksvilkår være akseptert! Videre må tjenesteeier/kunde ha anskaffet et virksomhetssertifikat fra utsteder autorisert av Nasjonal kommunikasjonsmyndighet (NKOM). Les mer om virksomhetssertifikat her (I verifikasjonsmiljøet kan en bruke selv-signerte sertifikater).
+
+Før produksjonssetting må teknisk informasjon være utvekslet, og en detaljert plan for produksjonssettingen må være levert Difi.
+
 ## Fremgangsmåte
  1.  Be om å få en klient-integrasjon ved å sende mail til  idporten@difi.no.  Hugs å oppgi ønska redirect-uri'er og annen nødvendig informasjon, se [klient-registrering](oidc_func_clientreg.html)
 
